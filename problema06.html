@@ -1,0 +1,18 @@
+<script>
+    //ENTRADA
+    const nota = Number(prompt("Informe sua nota do primeiro trimestre").trim().replace(",","."));
+    const nota2 = Number(prompt("Informe sua nota do segundo trimestre").trim().replace(",","."));
+    const nota3 = Number(prompt("Informe sua nota do terceiro trimestre"));
+
+    //PROCESSAMENTO
+    const media = (nota + nota2 +nota3) / 3;
+    if (media <4){
+        alert(`Reprovado`);
+    }
+    else if (meida >= 4 && media < 6){
+        alert(`Exame`);
+    }
+    else {
+        alert(`Aprovado`);
+    }
+</script>
